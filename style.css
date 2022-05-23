@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Roboto:wght@300&display=swap');
+
+
+body{
+  margin:0;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Roboto', sans-serif;
+  
+ 
+}
+
+nav{
+  top:0;
+  margin:0;
+  position: fixed; 
+  width: 100%;
+  color: green;
+  background: white;
+  box-shadow: 4px 7px 5px 0px rgba(62,66,66,0.21);
+}
+
+nav ul{
+  
+  display: flex;
+  justify-content: space-around;
+  background-color:#E05E1D;
+  
+}
+
+
+li{
+  background-color:;
+  border-radius: 10%;
+  align-items: center;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  list-style: none; 
+  
+   
+}
+
+nav ul a{
+  
+  text-decoration: none;
+}
+
+nav ul a:hover{
+  
+  background-color:#ED1C13;
+  
+}
+
+h2{
+  
+  text-align:center;
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  text-shadow: 1,5px 2px 2px #CE5937;
+  font-size: 2em;
+  text-align: left;
+  
+}
+h3{
+  
+  text-align:center;
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  text-shadow: 1,5px 1px 1px #CE5937;
+  font-size: 1em;
+  text-align: left;
+  
+}
+p{
+  
+  text-align:center;
+  
+}
+
+
+
+section{
+  
+  padding:3em;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+#box1{  
+  background-image: url("https://cdn-3.expansion.mx/dims4/default/6500239/2147483647/strip/true/crop/920x477+0+0/resize/1200x622!/format/webp/quality/90/?url=https%3A%2F%2Fcherry-brightspot.s3.amazonaws.com%2F19%2F81%2F525d26e04b57a28957cb2a1f74b9%2Fconsola.jpg");
+  background-size: cover;
+  border: solid blue 2px;
+  height: 100vh;
+}
+h1{
+  color: Pink;
+  font-family: 'Montserrat', sans-serif;
+  text-shadow: 2px 2px 2px #CE5937;
+  font-size: 2em;
+  text-align: center;
+  
+}
+
+.texto2{
+  font-size: 1,5em;
+  /*font-size: 1vw;*/
+  justify-content: center;
+  padding:0 1em 0 1em;
+  text-align: justify;
+  color: white;
+}
+
+.boton{
+  background-color:#E05E1D;
+  border-radius: 10%;
+  border: none;
+  color:white;
+  font-size: 1em;
+  padding: 16px 16px;
+  transition: 0.3s;
+  opacity: 1;
+}
+
+.boton:hover{
+  background-color:#ED1C13;
+  opacity: 0.6;
+  font-size: 1.1em;
+}
+
+.popup{
+  
+  width: 75%;
+  position: absolute;
+  margin: 0 auto;
+  top:0;
+  left:50%;
+  transform: translate(-50%, -50%) scale(0.1);
+  transition: transform 0.4s, top 0.4s;
+  visibility: hidden;
+}
+
+.open-popup{
+  
+  visibility: visible;
+  top: 60%;
+  transform: translate(-50%, -50%) scale(1);
+  
+}
+
+.popup iframe{
+  
+  width:100%;
+  margin: 0 auto;
+}
+
+.texto1{
+  
+  color: white;
+  padding:1em;
+  text-align: justify;
+  font-size:0.5em; 
+}
+
+#box2{
+  background-image: url("https://cdn-3.expansion.mx/dims4/default/6500239/2147483647/strip/true/crop/920x477+0+0/resize/1200x622!/format/webp/quality/90/?url=https%3A%2F%2Fcherry-brightspot.s3.amazonaws.com%2F19%2F81%2F525d26e04b57a28957cb2a1f74b9%2Fconsola.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding:20px;
+  display: flex;
+  /*background: #9A0BD9;*/
+  border: solid green 2px;
+  height: 100vh;
+}
+#box4{  
+  background-image: url("https://zemper.com/fondo-blanco/");
+  background-size: cover;
+  border: solid blue 2px;
+  height: 100vh;
+}
+#cont{
+  
+  display:flex;
+  justify-content: center;
+  gap: 20px;
+  
+}
+
+.caja{
+  
+  
+  flex-wrap: wrap;
+  justify-content: stretch;
+  width: 70%;
+    
+}
+
+footer{
+  border: solid red 2px;
+}
+
+@media screen and (max-width: 320px) {
+  
+  section{
+    flex-direction: column;
+    background: blue;
+  }
+  #cont{
+    
+    flex-direction: column;
+    
+  }
+  
+  nav{
+    background: transparent;
+    
+  }
+  
+  nav ul{
+   flex-direction: column;
+  
+    
+  }
+  
+  .caja{
+    
+     width: 100%;
+  }
+  
+}
+
+@media screen and (max-width: 720px) {
+  
+  .texto1{
+    
+     font-size:1.2em;
+  }
+  
+  
+}
